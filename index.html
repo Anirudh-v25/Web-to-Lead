@@ -6,6 +6,8 @@
     <title>Web To Lead Form</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
 </head>
 <body>
 <h1>Create Leads</h1>
@@ -15,6 +17,7 @@ method="POST" onsubmit="beforesubmit()">
 <input type=hidden name="oid" value="00D5i000008yiGr">
 <input type=hidden name="retURL" value="https://anirudh-v25.github.io/Web-to-Lead/thanks.html">
 <input type=hidden name="Lead_Date__c" class="outputdate">
+<input type=hidden name='captcha_settings' value='{"keyname":"WebToLeadNEW","fallback":"true","orgId":"00D5i000008yiGr","ts":""}'>
 
 <label for="first_name">First Name</label>
 <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true" />
@@ -36,6 +39,7 @@ method="POST" onsubmit="beforesubmit()">
 <label for="email">Lead Date</label>
 <input type="date" required="true" class="inputdate">
 
+<div class="g-recaptcha" data-sitekey="6LdlSZYrAAAAAI5iogd2rqp7HIYe-fbUnoSOH-5E"></div><br>
 <input type="submit" name="submit" class ="submit">
 
 </form>
